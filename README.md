@@ -1,4 +1,4 @@
-# Mini-Project: Pipeline Data Cuaca dengan Apache Airflow
+# Pipeline Data Cuaca dengan Apache Airflow
 
 Proyek ini adalah pipeline data sederhana yang dibuat untuk *challenge* data engineering. Tujuannya adalah mengambil data cuaca setiap jam dari API publik, membersihkannya, dan menyimpannya. Seluruh proses ini diatur dan dijadwalked menggunakan Apache Airflow.
 
