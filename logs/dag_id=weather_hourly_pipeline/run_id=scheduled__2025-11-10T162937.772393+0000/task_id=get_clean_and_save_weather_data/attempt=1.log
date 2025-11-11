@@ -1,0 +1,26 @@
+[2025-11-10T16:59:40.229+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: weather_hourly_pipeline.get_clean_and_save_weather_data scheduled__2025-11-10T16:29:37.772393+00:00 [queued]>
+[2025-11-10T16:59:40.243+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: weather_hourly_pipeline.get_clean_and_save_weather_data scheduled__2025-11-10T16:29:37.772393+00:00 [queued]>
+[2025-11-10T16:59:40.243+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-10T16:59:40.244+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2025-11-10T16:59:40.244+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-10T16:59:40.259+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): get_clean_and_save_weather_data> on 2025-11-10 16:29:37.772393+00:00
+[2025-11-10T16:59:40.269+0000] {standard_task_runner.py:55} INFO - Started process 4433 to run task
+[2025-11-10T16:59:40.272+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'weather_hourly_pipeline', 'get_clean_and_save_weather_data', 'scheduled__2025-11-10T16:29:37.772393+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/weather_pipeline_***.py', '--cfg-path', '/tmp/tmpcydom0wx']
+[2025-11-10T16:59:40.273+0000] {standard_task_runner.py:83} INFO - Job 13: Subtask get_clean_and_save_weather_data
+[2025-11-10T16:59:40.365+0000] {task_command.py:388} INFO - Running <TaskInstance: weather_hourly_pipeline.get_clean_and_save_weather_data scheduled__2025-11-10T16:29:37.772393+00:00 [running]> on host 6339130355c1
+[2025-11-10T16:59:40.460+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weather_hourly_pipeline
+AIRFLOW_CTX_TASK_ID=get_clean_and_save_weather_data
+AIRFLOW_CTX_EXECUTION_DATE=2025-11-10T16:29:37.772393+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-11-10T16:29:37.772393+00:00
+[2025-11-10T16:59:40.465+0000] {logging_mixin.py:137} INFO - Memulai proses pipeline cuaca untuk Jakarta...
+[2025-11-10T16:59:40.739+0000] {logging_mixin.py:137} INFO - Data berhasil diambil dan dibersihkan.
+[2025-11-10T16:59:40.750+0000] {logging_mixin.py:137} INFO - Data bersih berhasil disimpan di data/cleaned_data_20251110_165940.csv
+[2025-11-10T16:59:40.751+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-11-10T16:59:40.765+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=weather_hourly_pipeline, task_id=get_clean_and_save_weather_data, execution_date=20251110T162937, start_date=20251110T165940, end_date=20251110T165940
+[2025-11-10T16:59:40.807+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-11-10T16:59:40.833+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
